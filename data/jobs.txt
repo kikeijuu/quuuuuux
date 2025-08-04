@@ -10,7 +10,7 @@ mission "quxFastFood0"
 		government "Republic"
 		government "Syndicate"
 		government "Free Worlds"
-		distance 2
+		distance 1 3
 #	cargo "oily noodle burgers with pickled herring patties" 1
 	cargo "${quxFastFoodstuff}" 1
 	deadline
