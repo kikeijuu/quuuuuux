@@ -1,4 +1,4 @@
-# todo: add phrases for cargo and dialog
+# todo: alien variants
 mission "quxFastFood0"
 	name "Fast food to <planet>"
 	description "Bring <cargo> to <destination> by <date> for <payment>."
@@ -11,11 +11,26 @@ mission "quxFastFood0"
 		government "Syndicate"
 		government "Free Worlds"
 		distance 2
-	cargo "oily noodle burgers with pickled herring patties" 1
+#	cargo "oily noodle burgers with pickled herring patties" 1
+	cargo "${quxFastFoodstuff}"
 	deadline
 	job
 	repeat
 	on complete
-		dialog "As you touch down, a disgruntled intern meanders into the embarkation zone, and palms some credits into your hands. They wander away while waving over a small truck, tripping over themselves and mumbling something about unreasonable coworkers being gluttonous, picky, and tyrranical."
+#		dialog "As you touch down, a disgruntled intern meanders into the embarkation zone, and palms some credits into your hands. They wander away while waving over a small truck, tripping over themselves and mumbling something about unreasonable coworkers being gluttonous, picky, and tyrranical."
+		dialog "${quxFastFoodEnd}"
 		payment
 		payment 1000
+
+# phrases for quxFastFood
+phrase "quxFastFoodstuff"
+	word
+		"Deep Fried Santa Maria"
+		"Pinta Cola"
+		"Oily noodle burgers with pickled herring patties"
+
+phrase "quxFastFoodEnd"
+	word
+		"Slowing towards the spaceport, air traffic control redirects you to a smaller, more pristine landing pad just out of site from the your usual fare. The same massive logo is embossed on everything: the pad, the cargo cab approaching your ship, and the lapel on the suit that steps out of it. It feels odd to deliver something so greasy to such a regimented buisness."
+		"Touching down, you send a message to your client, informing them that you've landed at the pad they requested. They respond immediately, saying that they're right alongside you, and you spend a few fruitless seconds looking for them before realising your clients are the salivating, window-pressed crew of the ship parked to the left you."
+		"As you touch down, a disgruntled intern meanders into the embarkation zone, and palms some credits into your hands. They wander away while waving over a small truck, tripping over themselves and mumbling something about unreasonable coworkers being gluttonous, picky, and tyrranical."
