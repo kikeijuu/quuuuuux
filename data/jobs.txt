@@ -18,7 +18,16 @@ mission "quxFastFood0"
 		payment
 		payment 0 1000
 
-# phrases for quxFastFood
+# inserts for quxFastFood
+trade
+	commodity "quxFastFoodstuff"
+		"deep fried Santa Maria"
+		"Pinta Cola"
+		"oily noodle burgers with pickled herring patties"
+		"Deep Fried Chicken"
+		"artisanal french fries"
+		"synthetic cheeseburgers"
+
 phrase "quxFastFoodEnd"
 	word
 		"Slowing towards the spaceport, air traffic control redirects you to a smaller, more pristine landing pad just out of site from the your usual fare. The same massive logo is embossed on everything: the pad, the cargo cab approaching your ship, and the lapel on the suit that steps out of it. It feels odd to deliver something so greasy to such a regimented buisness."
