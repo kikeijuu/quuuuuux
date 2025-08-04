@@ -27,8 +27,11 @@ phrase "quxFastFoodstuff"
 	word
 		"Deep Fried Santa Maria"
 		"Pinta Cola"
-		"Oily noodle burgers with pickled herring patties"
+		"oily noodle burgers with pickled herring patties"
 		"Deep Fried Chicken"
+		"artisanal french fries"
+		"synthetic cheeseburgers"
+
 
 phrase "quxFastFoodEnd"
 	word
