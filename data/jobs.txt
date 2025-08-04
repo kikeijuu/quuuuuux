@@ -3,16 +3,12 @@ mission "quxFastFood0"
 	name "Fast food to <planet>"
 	description "Bring <cargo> to <destination> by <date> for <payment>."
 	source
-		government "Republic"
-		government "Syndicate"
-		government "Free Worlds"
+		government "Free Worlds" "Republic" "Syndicate"
 	destination
-		government "Republic"
-		government "Syndicate"
-		government "Free Worlds"
+		government "Free Worlds" "Republic" "Syndicate"
 		distance 1 3
 #	cargo "oily noodle burgers with pickled herring patties" 1
-	cargo "${quxFastFoodstuff}" 1
+	cargo "quxFastFoodstuff" 1
 	deadline
 	job
 	repeat
@@ -20,18 +16,17 @@ mission "quxFastFood0"
 #		dialog "As you touch down, a disgruntled intern meanders into the embarkation zone, and palms some credits into your hands. They wander away while waving over a small truck, tripping over themselves and mumbling something about unreasonable coworkers being gluttonous, picky, and tyrranical."
 		dialog "${quxFastFoodEnd}"
 		payment
-		payment 1000
+		payment 0 1000
 
-# phrases for quxFastFood
-phrase "quxFastFoodstuff"
-	word
-		"Deep Fried Santa Maria"
+# inserts for quxFastFood
+trade
+  commodity "quxFastFoodstuff"
+    "Deep Fried Santa Maria"
 		"Pinta Cola"
 		"oily noodle burgers with pickled herring patties"
 		"Deep Fried Chicken"
 		"artisanal french fries"
 		"synthetic cheeseburgers"
-
 
 phrase "quxFastFoodEnd"
 	word
