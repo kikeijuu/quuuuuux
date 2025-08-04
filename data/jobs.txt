@@ -17,4 +17,5 @@ mission "quxFastFood0"
 	repeat
 	on complete
 		dialog "As you touch down, a disgruntled intern meanders into the embarkation zone, and palms some credits into your hands. They wander away while waving over a small truck, tripping over themselves and mumbling something about unreasonable coworkers being gluttonous, picky, and tyrranical."
-		payment 2000
+		payment
+		payment 1000
