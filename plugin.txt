@@ -1,0 +1,7 @@
+name "Quuuuuux"
+about "Endymion, or how I learned to love Amuro Ray"
+version "0.0.0"
+authors
+	"Octogiraffe"
+tags
+	"WIP"

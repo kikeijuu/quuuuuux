@@ -1,0 +1,20 @@
+# todo: add phrases for cargo and dialog
+mission "quxFastFood0"
+	name "Fast food to <planet>"
+	description "Bring <cargo> to <destination> by <date> for <payment>."
+	source
+		government "Republic"
+		government "Syndicate"
+		government "Free Worlds"
+	destination
+		government "Republic"
+		government "Syndicate"
+		government "Free Worlds"
+		distance 2
+	cargo "oily noodle burgers with pickled herring patties" 1
+	deadline
+	job
+	repeat
+	on complete
+		dialog "As you touch down, a disgruntled intern meanders into the embarkation zone, and palms some credits into your hands. They wander away while waving over a small truck, tripping over themselves and mumbling something about unreasonable coworkers being gluttonous, picky, and tyrranical."
+		payment 2000
