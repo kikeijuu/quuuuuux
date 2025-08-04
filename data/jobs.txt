@@ -12,7 +12,7 @@ mission "quxFastFood0"
 		government "Free Worlds"
 		distance 2
 #	cargo "oily noodle burgers with pickled herring patties" 1
-	cargo "${quxFastFoodstuff}"
+	cargo "${quxFastFoodstuff}" 1
 	deadline
 	job
 	repeat
