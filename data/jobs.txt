@@ -21,7 +21,7 @@ mission "quxFastFood0"
 # inserts for quxFastFood
 trade
   	commodity "quxFastFoodstuff"
-    	"Deep Fried Santa Maria"
+    	"deep fried Santa Maria"
 		"Pinta Cola"
 		"oily noodle burgers with pickled herring patties"
 		"Deep Fried Chicken"
