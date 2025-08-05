@@ -1,4 +1,5 @@
 # todo: alien variants
+# acorns for the hai, supercapacitors for wanderers, etc
 mission "quxFastFood0"
 	name "Fast food to <planet>"
 	description "Bring <cargo> to <destination> by <date> for <payment>."
@@ -13,7 +14,7 @@ mission "quxFastFood0"
 	job
 	repeat
 	on complete
-#		dialog "As you touch down, a disgruntled intern meanders into the embarkation zone, and palms some credits into your hands. They wander away while waving over a small truck, tripping over themselves and mumbling something about unreasonable coworkers being gluttonous, picky, and tyrranical."
+#		dialog "As you touch down, a disgruntled intern meanders into the embarkation zone, and palms some credits into your hands. They wander away while waving over a small truck, tripping over themselves and mumbling something about unreasonable coworkers being gluttonous, picky, and tyrannical."
 		dialog "${quxFastFoodEnd}"
 		payment
 		payment 0 1000
@@ -49,3 +50,80 @@ phrase "quxFastFoodEnd"
 		"Slowing towards the spaceport, air traffic control redirects you to a smaller, more pristine landing pad just out of sight from the your usual fare. The same massive logo is embossed on everything: the pad, the cargo cab approaching your ship, and the lapel on the suit that steps out of it. It feels odd to deliver something so greasy to such a regimented business."
 		"Touching down, you send a message to your client informing them that you've landed at their requested pad. They respond immediately, saying that they're right alongside you, and you spend a few fruitless seconds looking for them before realizing your clients are the salivating, window-pressed crew of the ship parked to the left you."
 		"As you touch down, a disgruntled intern meanders into the embarkation zone, and palms some credits into your hands. They wander away while waving over a small truck, tripping over themselves and mumbling something about unreasonable coworkers being gluttonous, picky, and tyrannical."
+
+# Illegal "odd-looking" variant
+mission "quxFastFoodIllegal0"
+	name "${quxFastFoodIllegalName} <planet>"
+	color selected "quxIllegalOddJob: selected"
+	color unselected "quxIllegalOddJob: unselected"
+	color unavailable "quxIllegalOddJob: unavailable"
+	description "${quxFastFoodIllegalDesc}"
+	source
+		government "Free Worlds" "Republic" "Syndicate" "Independent" "Pirate"
+	destination
+		government "Free Worlds" "Republic" "Syndicate" "Independent"
+		distance 1 7
+	cargo "quxFastFoodstuff" 1 10
+	deadline
+	job
+	repeat
+	on complete
+		dialog "${quxFastFoodIllegalEnd}"
+		payment
+		payment 2000 2000
+
+color "quxIllegalOddJob: selected" .875 .5 .5 0.
+color "quxIllegalOddJob: unselected" .75 .25 .25 0.
+color "quxIllegalOddJob: unavailable" .625 .125 .125 0.
+
+phrase "quxFastFoodIllegalName"
+	word
+		"Fast food to"
+		"Fastfood to"
+		"fast food to"
+		"fastfood to"
+		"Fast food too"
+		"Fastfood too"
+		"fast food too"
+		"fastfood too"
+		"Fst food to"
+		"fst food to"
+		"Fstfood to"
+		"fstfood to"
+		"Fast fod to"
+		"fast fod to"
+		"Fastfod to"
+		"fastfod to"
+		"Fast fud to"
+		"fast fud to"
+		"Fastfud to"
+		"fastfud to"
+		"pls dlvr fst food to"
+
+phrase "quxFastFoodIllegalDesc"
+	word
+		"Bring <cargo> to <destination> by <date> for <payment>."
+		"bring <cargo> to <destination> by <date> for <payment>."
+		"<cargo> to <destination> by <date> for <payment>."
+		"Bring <cargo> to <destination> by <date> for <payment>"
+		"bring <cargo> to <destination> by <date> for <payment>"
+		"Bring <cargo> too <destination> by <date> for <payment>."
+		"bring <cargo> too <destination> by <date> for <payment>."
+		"Bring <cargo> to <destination> bye <date> for <payment>."
+		"bring <cargo> to <destination> bye <date> for <payment>."
+		"Bring <cargo> to <destination> by <date> fo <payment>."
+		"bring <cargo> to <destination> by <date> fo <payment>."
+		"Bring <cargo> to <destination> by <date> four <payment>."
+		"bring <cargo> to <destination> by <date> four <payment>."
+		"Deliver <cargo> to <destination> by <date> for <payment>."
+		"deliver <cargo> to <destination> by <date> for <payment>."
+		"dlvr <cargo> 2 <destination> by <date> fo <payment>."
+		"Bring <cargo> tu <destination> by <date> for <payment>."
+		"bring <cargo> tu <destination> by <date> for <payment>."
+		"pls tke <cargo> tu <destination>. b there <date>, friends have <payment>"
+
+phrase "quxFastFoodIllegalEnd"
+	word
+		"Slowing towards the spaceport, your client sends you encrypted coordinates to a smaller, dingier landing pad far out of sight from the your usual fare. Nothing has any logos or markings. Especially not the large van driving up to your ship. If you didn't realize it before, you can tell now that what you were delivering had nothing to do with fast food. Too late to change course, you complete the transaction, and receive your dirty <payment>."
+		"Setting down, you send a message to your client informing them that you've arrived at their requested pad. They do not respond, but you hear a quiet series of taps echoing through your ship, originating from the cargo bay doors. You open them to find a group of masked laborers, who are quick to take the cargo off your hands. A thin, wiry individual with a glossy choker hands you a credit chip as the others leave with your delivery."
+		"As you touch down, you find this section of the spaceport to be deserted, except for a small family with a stroller making their way around the landing pads. Slowly, they make their way up to your ship, and one of the children accompanying the stroller whistles loudly. As if on que, a port authority cargo cab arrives to receive your shipment. In short order, you receive your credits as well."
