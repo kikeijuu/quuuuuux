@@ -36,6 +36,11 @@ trade
 		"I can't believe its not cheeseburger"
 		"catburgers"
 		"cheezburgers"
+		"Martini martinis"
+		"Geminus Burgers (flavorfully explosive!)"
+		"Syndicate Flavor Packet #17"
+		"Longhorn beef burgers"
+		"*Real beef and *Real cheese cheeseburgers"
 
 phrase "quxFastFoodEnd"
 	word
