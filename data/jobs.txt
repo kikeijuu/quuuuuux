@@ -22,6 +22,7 @@ mission "quxFastFood0"
 # inserts for quxFastFood
 trade
 	commodity "quxFastFoodstuff"
+	# standard
 		"deep fried Santa Maria"
 		"Pinta Cola"
 		"oily noodle burgers with pickled herring patties"
@@ -42,8 +43,18 @@ trade
 		"Syndicate Flavor Packet #17"
 		"Longhorn beef burgers"
 		"*Real beef and *Real cheese cheeseburgers"
-		"Big McDaniels"
 		"Space Spamwich"
+		"chicken? nuggets"
+	# mcdaniel
+		"Big McDaniels"
+		"MondoMacs with extra pickles"
+		"large fries and medium BokeBolas"
+		"Big Zam Specials"
+		"large bacon double beesechurger"
+		"Maow's root beer"
+		"Bernie Burgers"
+		"Char-acha fries"
+		"bacon Deluxe McDickens"
 
 phrase "quxFastFoodEnd"
 	word
@@ -51,7 +62,7 @@ phrase "quxFastFoodEnd"
 		"Touching down, you send a message to your client informing them that you've landed at their requested pad. They respond immediately, saying that they're right alongside you, and you spend a few fruitless seconds looking for them before realizing your clients are the salivating, window-pressed crew of the ship parked to the left you."
 		"As you touch down, a disgruntled intern meanders into the embarkation zone, and palms some credits into your hands. They wander away while waving over a small truck, tripping over themselves and mumbling something about unreasonable coworkers being gluttonous, picky, and tyrannical."
 
-# Illegal "odd-looking" variant
+# illegal "odd-looking" variant
 mission "quxFastFoodIllegal0"
 	name "${quxFastFoodIllegalName} <planet>"
 	color selected "quxIllegalOddJob: selected"
@@ -75,6 +86,7 @@ mission "quxFastFoodIllegal0"
 		payment
 		payment 2000 2000
 
+# inserts for quxFastFoodIllegal
 color "quxIllegalOddJob: selected" .875 .5 .5 0.
 color "quxIllegalOddJob: unselected" .69 .69 .69 0.
 color "quxIllegalOddJob: unavailable" .18 .18 .18 0.
@@ -130,3 +142,5 @@ phrase "quxFastFoodIllegalEnd"
 		"Slowing towards the spaceport, your client sends you encrypted coordinates to a smaller, dingier landing pad far out of sight from the your usual fare. Nothing has any logos or markings. Especially not the large van driving up to your ship. If you didn't realize it before, you can tell now that what you were delivering had nothing to do with fast food. Too late to change course, you complete the transaction, and receive your dirty <payment>."
 		"Setting down, you send a message to your client informing them that you've arrived at their requested pad. They do not respond, but you hear a quiet series of taps echoing through your ship, originating from the cargo bay doors. You open them to find a group of masked laborers, who are quick to take the cargo off your hands. A thin, wiry individual with a glossy choker hands you a credit chip as the others leave with your delivery."
 		"As you touch down, you find this section of the spaceport to be deserted, except for a small family with a stroller making their way around the landing pads. Slowly, they make their way up to your ship, and one of the children accompanying the stroller whistles loudly. As if on que, a port authority cargo cab arrives to receive your shipment. In short order, you receive your credits as well."
+
+# to add: naval recruit transport
