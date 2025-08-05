@@ -4,9 +4,9 @@ mission "quxFastFood0"
 	name "Fast food to <planet>"
 	description "Bring <cargo> to <destination> by <date> for <payment>."
 	source
-		government "Free Worlds" "Republic" "Syndicate"
+		government "Free Worlds" "Republic" "Syndicate" "Neutral"
 	destination
-		government "Free Worlds" "Republic" "Syndicate"
+		government "Free Worlds" "Republic" "Syndicate" "Neutral"
 		distance 1 3
 #	cargo "oily noodle burgers with pickled herring patties" 1
 	cargo "quxFastFoodstuff" 1
@@ -59,9 +59,9 @@ mission "quxFastFoodIllegal0"
 	color unavailable "quxIllegalOddJob: unavailable"
 	description "${quxFastFoodIllegalDesc}"
 	source
-		government "Free Worlds" "Republic" "Syndicate" "Independent" "Pirate"
+		government "Free Worlds" "Republic" "Syndicate" "Neutral" "Independent" "Pirate"
 	destination
-		government "Free Worlds" "Republic" "Syndicate" "Independent"
+		government "Free Worlds" "Republic" "Syndicate" "Neutral" "Independent"
 		distance 1 7
 	cargo "quxFastFoodstuff" 1 10
 		illegal 100000 "The fast food packaging on your cargo might fool the human eye, the same can't be said for a cargo scanner. Whether or not you knew what you were really carrying, the local authorities certainly know now. Before you can react, you are billed with a fine, boarded, have your nice carpet stomped on at least six times, and lose your greasy cargo."
