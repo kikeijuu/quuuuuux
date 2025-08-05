@@ -42,6 +42,7 @@ trade
 		"Longhorn beef burgers"
 		"*Real beef and *Real cheese cheeseburgers"
 		"Big McDaniels"
+		"Space Spamwich"
 
 phrase "quxFastFoodEnd"
 	word
