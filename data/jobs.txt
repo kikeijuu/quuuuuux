@@ -64,6 +64,8 @@ mission "quxFastFoodIllegal0"
 		government "Free Worlds" "Republic" "Syndicate" "Independent"
 		distance 1 7
 	cargo "quxFastFoodstuff" 1 10
+		illegal 100000 "As you descend towards the port, you notice that your ship is being guided to a dock outside of the area set aside for commercial captains, into a separate encampment. You are forced to let a small party of port authority raiders sweep through your ship. They stop only once they reach your shipment of so-called fast food, and rip open greasy packaging to find less tasteful substances. The authorities apologize for the trouble, take your cargo, and hand you a fine."
+		stealth 
 	deadline
 	job
 	repeat
