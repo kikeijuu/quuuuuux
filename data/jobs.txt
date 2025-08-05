@@ -73,8 +73,8 @@ mission "quxFastFoodIllegal0"
 		payment 2000 2000
 
 color "quxIllegalOddJob: selected" .875 .5 .5 0.
-color "quxIllegalOddJob: unselected" .75 .25 .25 0.
-color "quxIllegalOddJob: unavailable" .625 .125 .125 0.
+color "quxIllegalOddJob: unselected" .25 .25 .25 0.
+color "quxIllegalOddJob: unavailable" .18 .18 .18 0.
 
 phrase "quxFastFoodIllegalName"
 	word
