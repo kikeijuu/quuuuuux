@@ -64,7 +64,8 @@ mission "quxFastFoodIllegal0"
 		government "Free Worlds" "Republic" "Syndicate" "Independent"
 		distance 1 7
 	cargo "quxFastFoodstuff" 1 10
-		illegal 100000 "As you descend towards the port, you notice that your ship is being guided to a dock outside of the area set aside for commercial captains, into a separate encampment. You are forced to let a small party of port authority raiders sweep through your ship. They stop only once they reach your shipment of so-called fast food, and rip open greasy packaging to find less tasteful substances. The authorities apologize for the trouble, take your cargo, and hand you a fine."
+		illegal 100000 "The fast food packaging on your cargo might fool the human eye, the same can't be said for a cargo scanner. Whether or not you knew what you were really carrying, the local authorities certainly know now. Before you can react, you are billed with a fine, boarded, have your nice carpet stomped on at least six times, and lose your greasy cargo."
+	#	"As you descend towards the port, you notice that your ship is being guided to a dock outside of the area set aside for commercial captains, into a separate encampment. You are forced to let a small party of port authority raiders sweep through your ship. They stop only once they reach your shipment of so-called fast food, and rip open greasy packaging to find less tasteful substances. The authorities apologize for the trouble, take your cargo, and hand you a fine."
 		stealth 
 	deadline
 	job
@@ -75,7 +76,7 @@ mission "quxFastFoodIllegal0"
 		payment 2000 2000
 
 color "quxIllegalOddJob: selected" .875 .5 .5 0.
-color "quxIllegalOddJob: unselected" .3 .3 .3 0.
+color "quxIllegalOddJob: unselected" .69 .69 .69 0.
 color "quxIllegalOddJob: unavailable" .18 .18 .18 0.
 
 phrase "quxFastFoodIllegalName"
