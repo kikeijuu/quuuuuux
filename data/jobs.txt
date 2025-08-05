@@ -41,6 +41,7 @@ trade
 		"Syndicate Flavor Packet #17"
 		"Longhorn beef burgers"
 		"*Real beef and *Real cheese cheeseburgers"
+		"Big McDaniels"
 
 phrase "quxFastFoodEnd"
 	word
