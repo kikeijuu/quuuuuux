@@ -85,7 +85,7 @@ mission "quxFastFoodIllegal0"
 	on complete
 		dialog "${quxFastFoodIllegalEnd}"
 		payment
-		payment 2000 2000
+		payment 1500 1500
 
 # inserts for quxFastFoodIllegal
 color "quxIllegalOddJob: selected" .875 .5 .5 0.
