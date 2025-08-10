@@ -154,8 +154,9 @@ mission "quxNavyRecruitTransport0"
 		# deep exceptions, unfinished
 		not planet "Alexandria" "Huginn Station" "Midgard" "Muninn Station" "Muspel" "Nifel"
 	destination
-		# todo: change to use an attribute or list specific planets
-		government "Republic" 
+		# todo: exceptions and additions
+		government "Republic"
+		attributes "military" 
 	passengers 2 1000
 	cargo "quxNavyRecruitCargo" 1 10
 	deadline
