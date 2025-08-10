@@ -152,6 +152,7 @@ mission "quxNavyRecruitTransport0"
 		government "Republic" "Syndicate" "Neutral"
 	destination
 		government "Republic"
+	passengers 2 1000
 	cargo "quxNavyRecruitCargo" 1 10
 	deadline
 	job
@@ -160,3 +161,25 @@ mission "quxNavyRecruitTransport0"
 		dialog "${quxNavyRecruitTransportEnd}"
 		payment
 		payment 0 1000
+
+# primary
+phrase "quxNavyRecruitCargo"
+	word
+		"personal effects"
+
+# secondary
+phrase "quxNavyRecruitCargo"
+	word
+		"fitted dress uniforms"
+		"provisions"
+		"medical supplies"
+		"training equipment"
+		"survival gear"
+		"communication systems"
+		"environmental suits"
+		"hygiene products"
+		"earthwork tools"
+		"collapsed shelters"
+		"emergency rations"
+		"first aid kits"
+		"nutritional supplements"
