@@ -162,12 +162,22 @@ mission "quxNavyRecruitTransport0"
 		payment
 		payment 0 1000
 
-# primary
+# inserts for quxNavyRecruitTransport
+phrase "quxNavyRecruitActivity"
+	word
+		"basic training"
+		"their acadamy enterance ceremony"
+		"unit formation"
+		"field training"
+		"further assignments"
+		"their first assignment"
+
+# primary cargo
 phrase "quxNavyRecruitCargo"
 	word
 		"personal effects"
 
-# secondary
+# secondary cargo
 phrase "quxNavyRecruitCargo"
 	word
 		"fitted dress uniforms"
