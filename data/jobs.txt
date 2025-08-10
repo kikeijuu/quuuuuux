@@ -180,7 +180,7 @@ phrase "quxNavyRecruitCargo"
 # secondary cargo
 phrase "quxNavyRecruitCargo"
 	word
-		"fitted dress uniforms"
+		"fitted uniforms"
 		"provisions"
 		"medical supplies"
 		"training equipment"
