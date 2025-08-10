@@ -153,6 +153,8 @@ mission "quxNavyRecruitTransport0"
 		government "Republic" "Syndicate" "Neutral"
 		# deep exceptions, finished
 		not planet "Alexandria" "Alfheim" "Huginn Station" "Leviathen Station" "Mani" "Midgard" "Muninn Station" "Muspel" "Nifel" "Pheonix Station" "Windblain"
+		# north exceptions, unfinished
+		not planet "Skillet"
 	destination
 		# todo: exceptions and additions
 		government "Republic"
