@@ -147,17 +147,18 @@ phrase "quxFastFoodIllegalEnd"
 # navy recruit transport
 mission "quxNavyRecruitTransport0"
 	name "Navy recruits to <planet>"
-	description "The Republic Navy is offering <payment> to captains willing to take <bunks> recent recruits and their <cargo> to <destination> for $(quxNavyRecruitActivity) by <date>."
+	description "The Republic Navy is offering <payment> to captains willing to take <bunks> recent recruits and their <cargo> to <destination> for ${quxNavyRecruitActivity} by <date>."
 	source
 		# todo: add more exceptions
 		government "Republic" "Syndicate" "Neutral"
-		# deep exceptions, unfinished
-		not planet "Alexandria" "Huginn Station" "Midgard" "Muninn Station" "Muspel" "Nifel"
+		# deep exceptions, finished
+		not planet "Alexandria" "Alfheim" "Huginn Station" "Leviathen Station" "Mani" "Midgard" "Muninn Station" "Muspel" "Nifel" "Pheonix Station" "Windblain"
 	destination
 		# todo: exceptions and additions
 		government "Republic"
-		attributes "military" 
-	passengers 2 1000
+		attributes "military"
+		distance 1 42
+	passengers 3 1000
 	cargo "quxNavyRecruitCargo" 1 10
 	deadline
 	job
@@ -165,7 +166,7 @@ mission "quxNavyRecruitTransport0"
 	on complete
 		dialog "${quxNavyRecruitTransportEnd}"
 		payment
-		payment 0 1000
+		payment 0 69
 
 # inserts for quxNavyRecruitTransport
 phrase "quxNavyRecruitActivity"
