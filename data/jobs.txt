@@ -55,6 +55,7 @@ trade
 		"Bernie Burgers"
 		"Char-acha fries"
 		"bacon Deluxe McDickens"
+		"steamed Zams"
 
 phrase "quxFastFoodEnd"
 	word
