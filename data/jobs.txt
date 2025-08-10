@@ -144,4 +144,19 @@ phrase "quxFastFoodIllegalEnd"
 		"Setting down, you send a message to your client informing them that you've arrived at their requested pad. They do not respond, but you hear a quiet series of taps echoing through your ship, originating from the cargo bay doors. You open them to find a group of masked laborers, who are quick to take the cargo off your hands. A thin, wiry individual with a glossy choker hands you a credit chip as the others leave with your delivery."
 		"As you touch down, you find this section of the spaceport to be deserted, except for a small family with a stroller making their way around the landing pads. Slowly, they make their way up to your ship, and one of the children accompanying the stroller whistles loudly. As if on que, a port authority cargo cab arrives to receive your shipment. In short order, you receive your credits as well."
 
-# to add: naval recruit transport
+# navy recruit transport
+mission "quxNavyRecruitTransport0"
+	name "Navy recruits to <planet>"
+	description "The Republic Navy is offering <payment> to captains willing to take <bunks> recent recruits and their <cargo> to <destination> for $(quxNavyRecruitActivity) by <date>."
+	source
+		government "Republic" "Syndicate" "Neutral"
+	destination
+		government "Republic"
+	cargo "quxNavyRecruitCargo" 1 10
+	deadline
+	job
+	repeat
+	on complete
+		dialog "${quxNavyRecruitTransportEnd}"
+		payment
+		payment 0 1000
