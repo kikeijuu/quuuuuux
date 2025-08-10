@@ -194,3 +194,10 @@ phrase "quxNavyRecruitCargo"
 		"emergency rations"
 		"first aid kits"
 		"nutrition supplements"
+
+# landing dialog
+phrase "quxNavyRecruitTransportEnd"
+	word
+		"The recruits file off your ship as soon as you touch down. Each has a quiet determination in their eyes, but they keep a freindly demeanor as you see them off by the hatch. The last to step off hands you a confirmation code, allowing you to recieve you <payment>."
+		"At last, your suffering is at an end. Pumped up with bravado the likes of which you have never seen, the fresh recruits you have been ferrying have accidentally damaged every last exposed component of your ship over the course of their journey, which they spent the length of partying. A more nervous, reversed recruit among the bunch has stuck with you however. Reluctant to leave your ship, they place a confirmation code for an allotment of <payment> as their fellow soldiers thunder out your ship. With a quick salute, they shut the hatch behind them as they leave."
+		"Setting down, your passengers march off your ship to the tune of trumpets and drums as a Naval band greets their arrival. Soon enough you find yourself humming in celebration as well, to the tune of <payment>."
