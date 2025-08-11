@@ -1,23 +1,29 @@
+# Ventra: Venture Reality Assessment, Remnant Intelligence and long term planning
+# NUE Horizons: Novel/Understood/Enemy Horizons, Ventra Threat Assessment wing with three units, integrated with Seekers
+
 # todo: lock behind new mission chain and new outfit
-# todo: add alien variants
+# todo: add variants for other factions
 mission "quxNueHorizonsIntelRepublic0"
 	job
 	repeat
 	name "Intelligence Gathering on <stopovers>"
-	description "Travel to <stopovers> in Ancestral space to meet and gather data on a person of interest to the Remnant. As they are a potential threat, your memories of your mission and of the Remnant will be supressed, and you will have to return to <destination> to have them restored. This mission cannot be aborted."
+	description "Travel to <stopovers> in Ancestral space to gather data on a person of interest to the Remnant, using your reputation to meet them in person. As they are a potential threat, your memories of your mission and of the Remnant will be supressed, and you will have to return to <destination> to have them restored. This mission cannot be aborted."
+    invisible
 	source
 		government "Remnant"
 	stopover
         government "Republic" "Nuetral"
         attributes "spaceport"
 	to offer
+        # todo: has new mission, has fw campaign end if dependency not part of new mission
 		has "Remnant: Expanded Horizons Astral 2: done"
 		random < 42
 	on offer
+        # todo: replace lab with new outfit
 		require "Research Laboratory"
 	on stopover
-		dialog "Your scientist unpacks the laboratory and takes the requested observations. A short while later, they have the data compiled on a set of data crystals and inform you that everything is ready for departure."
+		dialog ""
 	on complete
-		payment 500000
+		payment 700000
 		"reputation: Remnant" ++
-		dialog "When you land, a researcher quickly retrieves the data crystals with the information about the surveyed system and hands you the logistics allotment of <payment>."
+		dialog "When you land, a Ventra operative quickly retrieves the data crystals with the information about the person of interest and hands you the logistics allotment of <payment>."
