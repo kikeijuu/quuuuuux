@@ -1,0 +1,22 @@
+# todo: lock behind new mission chain and new outfit
+# todo: add alien variants
+mission "quxNueHorizonsIntelRepublic0"
+	job
+	repeat
+	name "Intelligence Gathering on <stopovers>"
+	description "Travel to <stopovers> in Ancestral space to meet and gather data on a person of interest to the Remnant. As they are a potential threat, your memories of your mission and of the Remnant will be supressed, and you will have to return to <destination> to have them restored. This mission cannot be aborted."
+	source
+		government "Remnant"
+	stopover
+        government "Republic" "Nuetral"
+	to offer
+		has "Remnant: Expanded Horizons Astral 2: done"
+		random < 42
+	on offer
+		require "Research Laboratory"
+	on stopover
+		dialog "Your scientist unpacks the laboratory and takes the requested observations. A short while later, they have the data compiled on a set of data crystals and inform you that everything is ready for departure."
+	on complete
+		payment 500000
+		"reputation: Remnant" ++
+		dialog "When you land, a researcher quickly retrieves the data crystals with the information about the surveyed system and hands you the logistics allotment of <payment>."
