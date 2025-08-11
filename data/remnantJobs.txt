@@ -9,6 +9,7 @@ mission "quxNueHorizonsIntelRepublic0"
 		government "Remnant"
 	stopover
         government "Republic" "Nuetral"
+        attributes "spaceport"
 	to offer
 		has "Remnant: Expanded Horizons Astral 2: done"
 		random < 42
