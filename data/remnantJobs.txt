@@ -3,7 +3,7 @@
 # NUE Horizons: Novel/Understood/Enemy Horizons, Ventra Threat Assessment wing with three units, integrated with Seekers
 
 # todo: lock behind new mission chain and new outfit
-# todo: add variants for other factions
+# todo: add variants targeting factions
 mission "quxNueHorizonsIntelRepublic0"
 	job
 	repeat
@@ -22,9 +22,13 @@ mission "quxNueHorizonsIntelRepublic0"
 	on offer
         # todo: replace lab with new outfit
 		require "Research Laboratory"
+    on accept
+        dialog "${quxNueHorizonsIntelAcceptHuman}"
 	on stopover
-		dialog ""
+		dialog "${quxNueHorizonsIntelStopoverRepublic}"
 	on complete
 		payment 700000
 		"reputation: Remnant" ++
+        # todo: comment out placeholder
 		dialog "When you land, a Ventra operative quickly retrieves the data crystals with the information about the person of interest and hands you the logistics allotment of <payment>."
+#       dialog "${quxNueHorizonsIntelCompleteHuman}"
