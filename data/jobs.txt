@@ -13,6 +13,8 @@ mission "quxFastFood0"
 	deadline
 	job
 	repeat
+	to offer
+		random < 69
 	on complete
 #		dialog "As you touch down, a disgruntled intern meanders into the embarkation zone, and palms some credits into your hands. They wander away while waving over a small truck, tripping over themselves and mumbling something about unreasonable coworkers being gluttonous, picky, and tyrannical."
 		dialog "${quxFastFoodEnd}"
@@ -57,6 +59,7 @@ trade
 		"bacon Deluxe McDickens"
 		"steamed Zams"
 
+# todo: add an ending suggesting that ordering fast food from another planet is weird
 phrase "quxFastFoodEnd"
 	word
 		"Slowing towards the spaceport, air traffic control redirects you to a smaller, more pristine landing pad just out of sight from the your usual fare. The same massive logo is embossed on everything: the pad, the cargo cab approaching your ship, and the lapel on the suit that steps out of it. It feels odd to deliver something so greasy to such a regimented business."
@@ -82,6 +85,8 @@ mission "quxFastFoodIllegal0"
 	deadline
 	job
 	repeat
+	to offer
+		random < 42
 	on complete
 		dialog "${quxFastFoodIllegalEnd}"
 		payment
@@ -169,6 +174,8 @@ mission "quxNavyRecruitTransport0"
 	deadline
 	job
 	repeat
+	to offer
+		random < 70
 	on complete
 		dialog "${quxNavyRecruitTransportEnd}"
 		payment
