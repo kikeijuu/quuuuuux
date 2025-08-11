@@ -89,7 +89,7 @@ mission "quxFastFoodIllegal0"
 
 # inserts for quxFastFoodIllegal
 color "quxIllegalOddJob: selected" .875 .5 .5 0.
-color "quxIllegalOddJob: unselected" .69 .69 .69 0.
+color "quxIllegalOddJob: unselected" .64 .64 .64 0.
 color "quxIllegalOddJob: unavailable" .18 .18 .18 0.
 
 phrase "quxFastFoodIllegalName"
