@@ -155,6 +155,8 @@ mission "quxNavyRecruitTransport0"
 		not planet "Alexandria" "Alfheim" "Huginn Station" "Leviathen Station" "Mani" "Midgard" "Muninn Station" "Muspel" "Nifel" "Pheonix Station" "Windblain"
 		# north exceptions, unfinished
 		not planet "Skillet"
+		# dirt belt exceptions, unfinished
+		not planet "Ingot"
 	destination
 		# todo: exceptions and additions
 		government "Republic"
