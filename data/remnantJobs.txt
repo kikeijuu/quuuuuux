@@ -4,7 +4,7 @@
 
 # todo: rework to make this concept actually work
 # todo: lock behind new mission chain (and new outfit?)
-# todo: add variants targeting factions
+# todo: add variants targeting other factions
 mission "quxNueHorizonsIntelRepublic0"
 	job
 	repeat
