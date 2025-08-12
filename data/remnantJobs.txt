@@ -9,13 +9,14 @@ mission "quxNueHorizonsIntelRepublic0"
 	job
 	repeat
 	name "Intelligence Gathering on <stopovers>"
-	description "Travel to <stopovers> in Ancestral space to gather data on a person of interest to the Remnant, using your reputation to meet them in person. As they are a potential threat, your memories of your mission and of the Remnant will be supressed, and you will have to return to <destination> to have them restored. This mission cannot be aborted."
-	# invisible prevents dialogue, disabled for now
+#	description "Travel to <stopovers> in Ancestral space to gather data on a person of interest to the Remnant, using your reputation to meet them in person. As they are a potential threat, your memories of your mission and of the Remnant will be supressed, and you will have to return to <destination> to have them restored. This mission cannot be aborted."
+	description "Travel to <stopovers> in Ancestral space to gather data on a person of interest to the Remnant, using your reputation to meet them in person. As they are a potential threat, this mission will require additional security measures that may make navigation difficult."
+	# invisible prevents dialogue, should be in another mission
 #   invisible
 	source
 		government "Remnant"
 	stopover
-        government "Republic" "Nuetral"
+        government "Free Worlds" "Republic" "Syndicate" "Neutral" "Independent"
         attributes "spaceport"
 	to offer
         # todo: has new mission, has fw campaign end if dependency not part of new mission
@@ -26,18 +27,27 @@ mission "quxNueHorizonsIntelRepublic0"
 		require "Research Laboratory"
     on accept
         dialog "${quxNueHorizonsIntelAcceptHuman}"
+		dialog "${quxNueHorizonsIntelAccept}"
 	on stopover
 		dialog "${quxNueHorizonsIntelStopoverRepublic}"
+	# completion has to tie in with the invisible mission
 	on complete
-		payment 700000
-		"reputation: Remnant" ++
+#		payment 700000
+#		"reputation: Remnant" ++
         # todo: comment out placeholder
-		dialog "When you land, a Ventra operative quickly retrieves the data crystals with the information about the person of interest and hands you the logistics allotment of <payment>."
+#		dialog "When you land, a Ventra operative quickly retrieves the data crystals with the information about the person of interest and hands you the logistics allotment of <payment>."
 #       dialog "${quxNueHorizonsIntelCompleteHuman}"
+
+phrase "quxNueHorizonsIntelAccept"
+	word
+		"This mission is too sensitive to risk having your records scanned, so you opt to keep the target destination on a small slip of paper, divorced from your ship's mapping computer."
 
 phrase "quxNueHorizonsIntelAcceptHuman"
 	word
-		# long
-		"The spaceport's perfect summons you through comms to the local Ventra office. There, at the bottom of a natural cave almost as deep as the Remnant's vaults, you get debriefed by the perfect and their Ventra aid. After explaining your cover story - soon to be your new reality - and your pretext of being hired by Solar Winds Logistics to meet your target, another Remnant leads you into a dark, earthy chamber. The last thing you see is the flash of a tuning rifle, shifting the weft of some of your gray matter, and the memories within."
-		# concise
-		"The spaceport's perfect summons you  to the local Ventra office. There, at the bottom of an hidden cave almost as deep as the Remnant's vaults, you get debriefed. After explaining your cover story and your pretext of being hired by Solar Winds Logistics to meet your target, a Remnant leads you into a dark, earthy chamber. The last thing you see is the flash of a tuning rifle, shifting the weft of some of your gray matter, and the memories within."
+		# long, old
+#		"The spaceport's perfect summons you through comms to the local Ventra office. There, at the bottom of a natural cave almost as deep as the Remnant's vaults, you get debriefed by the perfect and their Ventra aid. After explaining your cover story - soon to be your new reality - and your pretext of being hired by Solar Winds Logistics to meet your target, another Remnant leads you into a dark, earthy chamber. The last thing you see is the flash of a tuning rifle, shifting the weft of some of your gray matter, and the memories within."
+		# concise, old
+#		"The spaceport's perfect summons you  to the local Ventra office. There, at the bottom of an hidden cave almost as deep as the Remnant's vaults, you get debriefed. After explaining your cover story and your pretext of being hired by Solar Winds Logistics to meet your target, a Remnant leads you into a dark, earthy chamber. The last thing you see is the flash of a tuning rifle, shifting the weft of some of your gray matter, and the memories within."
+		
+		# new
+		"The spaceport's perfect summons you through comms to the local Ventra office. There, at the bottom of a natural cave almost as deep as the Remnant's vaults, you get debriefed by the perfect and their Ventra aid. Together, they explain your cover story and your pretext of being hired by Solar Winds Logistics to meet your target: you are to land on <stopovers>, travel to another destination to meet the target, and then return to <destination>."
