@@ -2,6 +2,7 @@
 # Ventra: Venture Reality Assessment, Remnant Intelligence and long term planning
 # NUE Horizons: Novel/Understood/Enemy Horizons, Ventra Threat Assessment wing with three units, integrated with Seekers
 
+# todo: rework to make this concept actually work
 # todo: lock behind new mission chain and new outfit
 # todo: add variants targeting factions
 mission "quxNueHorizonsIntelRepublic0"
@@ -9,7 +10,8 @@ mission "quxNueHorizonsIntelRepublic0"
 	repeat
 	name "Intelligence Gathering on <stopovers>"
 	description "Travel to <stopovers> in Ancestral space to gather data on a person of interest to the Remnant, using your reputation to meet them in person. As they are a potential threat, your memories of your mission and of the Remnant will be supressed, and you will have to return to <destination> to have them restored. This mission cannot be aborted."
-    invisible
+	# invisible prevents dialogue, disabled for now
+#   invisible
 	source
 		government "Remnant"
 	stopover
