@@ -5,6 +5,7 @@
 # todo: rework to make this concept actually work
 # todo: lock behind new mission chain (and new outfit?)
 # todo: add variants targeting other factions
+# mission frame (start and end)
 mission "quxNueHorizonsIntelRepublic0"
 	job
 	repeat
@@ -22,6 +23,7 @@ mission "quxNueHorizonsIntelRepublic0"
         # todo: has new mission, has fw campaign end if dependency not part of new mission
 		has "Remnant: Expanded Horizons Astral 2: done"
 		random < 42
+		not "quxNueHorizonsIntelRepublic0: offered"
 	on offer
         # todo: replace lab with new outfit, if it is needed
 #		require "Research Laboratory"
@@ -29,9 +31,15 @@ mission "quxNueHorizonsIntelRepublic0"
         dialog "${quxNueHorizonsIntelAcceptHuman}"
 		dialog "${quxNueHorizonsIntelAccept}"
 	on stopover
+		set "quxNueHorizonsIntelRepublicStopover0"
 #		dialog "${quxNueHorizonsIntelStopoverRepublic}"
+	on decline
+		clear "quxNueHorizonsIntelRepublic0: offered"
+	on fail
+		clear "quxNueHorizonsIntelRepublic0: offered"
 	# completion has to tie in with the invisible mission
 	on complete
+		clear "quxNueHorizonsIntelRepublic0: offered"
 #		payment 700000
 #		"reputation: Remnant" ++
         # todo: comment out placeholder
@@ -51,3 +59,7 @@ phrase "quxNueHorizonsIntelAcceptHuman"
 		
 		# new
 		"The spaceport's perfect summons you through comms to the local Ventra office. There, at the bottom of a natural cave almost as deep as the Remnant's vaults, you get debriefed by the perfect and their Ventra aid. Together, they explain your cover story and your pretext of being hired by Solar Winds Logistics to meet your target: you are to land on <stopovers>, travel to another destination to meet the target, and then return to <destination>."
+
+# mission middle, invisible
+mission "quxNueHorizonsIntelRepublic1"
+	repeat
