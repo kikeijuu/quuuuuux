@@ -29,7 +29,7 @@ mission "quxNueHorizonsIntelRepublic0"
         dialog "${quxNueHorizonsIntelAcceptHuman}"
 		dialog "${quxNueHorizonsIntelAccept}"
 	on stopover
-		dialog "${quxNueHorizonsIntelStopoverRepublic}"
+#		dialog "${quxNueHorizonsIntelStopoverRepublic}"
 	# completion has to tie in with the invisible mission
 	on complete
 #		payment 700000
