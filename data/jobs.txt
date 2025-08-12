@@ -157,10 +157,10 @@ mission "quxNavyRecruitTransport0"
 		# todo: add more exceptions
 		government "Republic" "Syndicate" "Neutral"
 		# deep exceptions, finished
-		not planet "Alexandria" "Alfheim" "Huginn Station" "Leviathen Station" "Mani" "Midgard" "Muninn Station" "Muspel" "Nifel" "Pheonix Station" "Windblain"
-		# north exceptions, unfinished
-		not planet "Featherweight" "Skillet"
-		# paradise exceptions, unfished
+		not planet "Alexandria" "Alfheim" "Huginn Station" "Leviathen Station" "Mani" "Midgard" "Muspel" "Nifel" "Pheonix Station" "Windblain"
+		# north exceptions, finished
+		not planet "Carbuncle Station" "Featherweight" "Pilot" "Skillet"
+		# paradise exceptions, finished
 		not planet "Pearl"
 		# dirt belt exceptions, unfinished
 		not planet "Ingot"
