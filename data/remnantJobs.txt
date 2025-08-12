@@ -3,7 +3,7 @@
 # NUE Horizons: Novel/Understood/Enemy Horizons, Ventra Threat Assessment wing with three units, integrated with Seekers
 
 # todo: rework to make this concept actually work
-# todo: lock behind new mission chain and new outfit
+# todo: lock behind new mission chain (and new outfit?)
 # todo: add variants targeting factions
 mission "quxNueHorizonsIntelRepublic0"
 	job
@@ -23,8 +23,8 @@ mission "quxNueHorizonsIntelRepublic0"
 		has "Remnant: Expanded Horizons Astral 2: done"
 		random < 42
 	on offer
-        # todo: replace lab with new outfit
-		require "Research Laboratory"
+        # todo: replace lab with new outfit, if it is needed
+#		require "Research Laboratory"
     on accept
         dialog "${quxNueHorizonsIntelAcceptHuman}"
 		dialog "${quxNueHorizonsIntelAccept}"
