@@ -25,22 +25,16 @@ mission "quxNueHorizonsIntelRepublic0"
         # todo: replace lab with new outfit, if it is needed
 #		require "Research Laboratory"
     on accept
-        dialog "${quxNueHorizonsIntelAcceptHuman}"
-		dialog "${quxNueHorizonsIntelAccept}"
-	stopover
-		government "Free Worlds" "Republic" "Syndicate" "Neutral" "Independent"
-		attributes "spaceport"
-	on stopover
-		set "quxNueHorizonsIntelRepublicSignal0"
+	# stopover deprecated
+#	stopover
+#		government "Free Worlds" "Republic" "Syndicate" "Neutral" "Independent"
+#		attributes "spaceport"
 	on abort
 		clear "quxNueHorizonsIntelRepublic0: offered"
-		clear "quxNueHorizonsIntelRepublicSignal0"
 	on decline
 		clear "quxNueHorizonsIntelRepublic0: offered"
-		clear "quxNueHorizonsIntelRepublicSignal0"
 	on fail
 		clear "quxNueHorizonsIntelRepublic0: offered"
-		clear "quxNueHorizonsIntelRepublicSignal0"
 	# completion has to tie in with the chained mission
 	to complete
 		has "quxNueHorizonsIntelRepublicCompReq0"
