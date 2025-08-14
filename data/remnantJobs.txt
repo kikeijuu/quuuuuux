@@ -50,15 +50,35 @@ mission "quxNueHorizonsIntelRepublic0"
 conversation "quxNueHorizonsIntelConversation0"
 	label "start"
 	scene "scene/thomasmarchand0.jpg"
+	`${quxNueHorizonsIntelAcceptHuman0}`
+	`	${quxNueHorizonsIntelAcceptHuman1}`
+	`	${quxNueHorizonsIntelAcceptHuman2}`
+	`	${quxNueHorizonsIntelAcceptHuman3}`
+	`	${quxNueHorizonsIntelAcceptHuman4}`
 
 phrase "quxNueHorizonsIntelAccept"
 	word
 		"This mission is too sensitive to risk having your records scanned, so you opt to keep the target destination on a small slip of paper, divorced from your ship's mapping computer."
 
-phrase "quxNueHorizonsIntelAcceptHuman"
+phrase "quxNueHorizonsIntelAcceptHuman0"
 	word
-		# new
-		"The spaceport's perfect summons you through comms to the local Ventra office. There, at the bottom of a natural cave almost as deep as the Remnant's vaults, you get debriefed by the perfect and their Ventra aid. Together, they explain your cover story and your pretext of being hired by Solar Winds Logistics to meet your target: you are to land on <stopovers>, take a job as cover to meet the target on another planet, and then return to <destination>."
+		"The spaceport's perfect summons you through comms to the local Ventra office. The facility is built into the side of a mountain, and is noticeably older than the docks below. The perfect explains that the structure has been use by Ventra for more than a century, its equipment, floors, and defensive turrets being renovated yearly to meet the standards of Remnant efficiency. The walls, however, are the same stone they have always been."
+
+phrase "quxNueHorizonsIntelAcceptHuman1"
+	word
+		"In a hall outside this Ventra installation's NUE Horizons office, you get debriefed by a Remnant youth the perfect introduces to you as a Ventra handler. Together, they explain your mission."
+
+phrase "quxNueHorizonsIntelAcceptHuman2"
+	word
+		"You are to head to a planet in Ancestral space, where a Seeker in orbit has hacked into the local port authority job board. You will have to navigate to this planet independently, but depending on where NUE Horizon's Seekers are currently stationed, you can choose which to land at. Once you do so, the Seeker in orbit will insert a job under an affiliate corporation of Solar Winds Logistics into the board, which will you give you the pretext you need to meet with the target."
+
+phrase "quxNueHorizonsIntelAcceptHuman3"
+	word
+		"The target is a person of interest in Ancestral space, whose decisions and allegiences could threaten Remnant interests in the future. The Ventra handler signs that this is unlikely, but that their division would like you to take procedures not to be caught with any evidence that you knew about the job in advance."
+
+phrase "quxNueHorizonsIntelAcceptHuman4"
+	word
+		"Stepping towards the closed door to the NUE Horizons office, the Ventra signs for you to follow, as the perfect prepares to leave behind you."
 
 		# long, v0
 #		"The spaceport's perfect summons you through comms to the local Ventra office. There, at the bottom of a natural cave almost as deep as the Remnant's vaults, you get debriefed by the perfect and their Ventra aid. After explaining your cover story - soon to be your new reality - and your pretext of being hired by Solar Winds Logistics to meet your target, another Remnant leads you into a dark, earthy chamber. The last thing you see is the flash of a tuning rifle, shifting the weft of some of your gray matter, and the memories within."
