@@ -49,7 +49,7 @@ mission "quxNueHorizonsIntelRepublic0"
 
 conversation "quxNueHorizonsIntelConversation0"
 	label "start"
-	scene scene/
+	scene "scene/thomasmarchand0.jpg"
 
 phrase "quxNueHorizonsIntelAccept"
 	word
