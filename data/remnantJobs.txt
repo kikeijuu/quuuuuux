@@ -27,6 +27,7 @@ mission "quxNueHorizonsIntelRepublic0"
     on accept
 		"quxNueHorizonsRendezvousAncestRoll" = "roll: 1"
 		conversation "quxNueHorizonsIntelConversation0"
+		dialog "${quxNueHorizonsIntelAccept}"
 	# stopover deprecated
 #	stopover
 #		government "Free Worlds" "Republic" "Syndicate" "Neutral" "Independent"
@@ -65,12 +66,24 @@ conversation "quxNueHorizonsIntelConversation0"
 	label "selectRendezvous"
 	scene "scene/santesson89_0.jpg"
 
+	# human space 0-100
 	branch "Earth"
 		"quxNueHorizonsRendezvousAncestRoll" == 0
 
+	# branch selection failure fallback
+	`(Something has gone horribly wrong with this mission. Please contact Octogiraffe)`
+	decline
+
+	# branch outputs
+	label "Earth"
+	`${quxNueHorizonsIntelAcceptHuman5}`
+	`	It looks like your destination is Earth, birthplace of Humanity.`
+	`	${quxNueHorizonsIntelAcceptHuman6}`
+	accept
+
 phrase "quxNueHorizonsIntelAccept"
 	word
-		"This mission is too sensitive to risk having your records scanned, so you opt to keep the target destination on a small slip of paper, divorced from your ship's mapping computer."
+		"This mission is too sensitive to risk having your records scanned, so you opt to keep your first destination on a small slip of paper, divorced from your ship's mapping computer."
 
 phrase "quxNueHorizonsIntelAcceptHuman0"
 	word
