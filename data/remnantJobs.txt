@@ -11,15 +11,11 @@ mission "quxNueHorizonsIntelRepublic0"
 	repeat
 	name "Intel gathering: Republic"
 #	description "Travel to <stopovers> in Ancestral space to gather data on a person of interest to the Remnant, using your reputation to meet them in person. As they are a potential threat, your memories of your mission and of the Remnant will be supressed, and you will have to return to <destination> to have them restored. This mission cannot be aborted."
-	description "Travel to a specific planet in Ancestral space to accept a job, in order to gather data on a person of interest to the Remnant"
+	description "Travel to <planet stopovers> in Ancestral space to accept a Solar Winds Logistics job, in order to gather data on a person of interest to the Remnant."
 	# invisible prevents dialogue, moved to chained mission
 #   invisible
 	source
 		government "Remnant"
-	# stopover moved to chained mission
-#	stopover
-#       government "Free Worlds" "Republic" "Syndicate" "Neutral" "Independent"
-#       attributes "spaceport"
 	to offer
         # todo: has new mission, has fw campaign end if dependency not part of new mission
 		has "Remnant: Expanded Horizons Astral 2: done"
@@ -31,10 +27,20 @@ mission "quxNueHorizonsIntelRepublic0"
     on accept
         dialog "${quxNueHorizonsIntelAcceptHuman}"
 		dialog "${quxNueHorizonsIntelAccept}"
+	stopover
+		government "Free Worlds" "Republic" "Syndicate" "Neutral" "Independent"
+		attributes "spaceport"
+	on stopover
+		set "quxNueHorizonsIntelRepublicSignal0"
+	on abort
+		clear "quxNueHorizonsIntelRepublic0: offered"
+		clear "quxNueHorizonsIntelRepublicSignal0"
 	on decline
 		clear "quxNueHorizonsIntelRepublic0: offered"
+		clear "quxNueHorizonsIntelRepublicSignal0"
 	on fail
 		clear "quxNueHorizonsIntelRepublic0: offered"
+		clear "quxNueHorizonsIntelRepublicSignal0"
 	# completion has to tie in with the chained mission
 	to complete
 		has "quxNueHorizonsIntelRepublicCompReq0"
@@ -53,7 +59,7 @@ phrase "quxNueHorizonsIntelAccept"
 phrase "quxNueHorizonsIntelAcceptHuman"
 	word
 		# new
-		"The spaceport's perfect summons you through comms to the local Ventra office. There, at the bottom of a natural cave almost as deep as the Remnant's vaults, you get debriefed by the perfect and their Ventra aid. Together, they explain your cover story and your pretext of being hired by Solar Winds Logistics to meet your target: you are to land on <stopovers>, travel to another destination to meet the target, and then return to <destination>."
+		"The spaceport's perfect summons you through comms to the local Ventra office. There, at the bottom of a natural cave almost as deep as the Remnant's vaults, you get debriefed by the perfect and their Ventra aid. Together, they explain your cover story and your pretext of being hired by Solar Winds Logistics to meet your target: you are to land on <stopovers>, take a job as cover to meet the target on another planet, and then return to <destination>."
 
 		# long, v0
 #		"The spaceport's perfect summons you through comms to the local Ventra office. There, at the bottom of a natural cave almost as deep as the Remnant's vaults, you get debriefed by the perfect and their Ventra aid. After explaining your cover story - soon to be your new reality - and your pretext of being hired by Solar Winds Logistics to meet your target, another Remnant leads you into a dark, earthy chamber. The last thing you see is the flash of a tuning rifle, shifting the weft of some of your gray matter, and the memories within."
