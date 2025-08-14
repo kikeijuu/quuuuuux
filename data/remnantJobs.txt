@@ -25,6 +25,7 @@ mission "quxNueHorizonsIntelRepublic0"
         # todo: replace lab with new outfit, if it is needed
 #		require "Research Laboratory"
     on accept
+		"quxNueHorizonsRendezvousAncestRoll" = "roll: 1"
 		conversation "quxNueHorizonsIntelConversation0"
 	# stopover deprecated
 #	stopover
@@ -63,6 +64,9 @@ conversation "quxNueHorizonsIntelConversation0"
 
 	label "selectRendezvous"
 	scene "scene/santesson89_0.jpg"
+
+	branch "Earth"
+		"quxNueHorizonsRendezvousAncestRoll" == 0
 
 phrase "quxNueHorizonsIntelAccept"
 	word
