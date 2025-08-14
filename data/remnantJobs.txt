@@ -55,6 +55,14 @@ conversation "quxNueHorizonsIntelConversation0"
 	`	${quxNueHorizonsIntelAcceptHuman2}`
 	`	${quxNueHorizonsIntelAcceptHuman3}`
 	`	${quxNueHorizonsIntelAcceptHuman4}`
+	choice
+	`   (Follow the handler and accept the job)`
+		goto "selectRendezvous"
+	`   (Return to the spaceport with the perfect)`
+		decline
+
+	label "selectRendezvous"
+	scene "scene/santesson89_0.jpg"
 
 phrase "quxNueHorizonsIntelAccept"
 	word
@@ -78,7 +86,7 @@ phrase "quxNueHorizonsIntelAcceptHuman3"
 
 phrase "quxNueHorizonsIntelAcceptHuman4"
 	word
-		"Stepping towards the closed door to the NUE Horizons office, the Ventra signs for you to follow, as the perfect prepares to leave behind you."
+		"Stepping towards the door to the NUE Horizons division, the Ventra handler signs for you to follow, as the perfect prepares to leave behind you."
 
 		# long, v0
 #		"The spaceport's perfect summons you through comms to the local Ventra office. There, at the bottom of a natural cave almost as deep as the Remnant's vaults, you get debriefed by the perfect and their Ventra aid. After explaining your cover story - soon to be your new reality - and your pretext of being hired by Solar Winds Logistics to meet your target, another Remnant leads you into a dark, earthy chamber. The last thing you see is the flash of a tuning rifle, shifting the weft of some of your gray matter, and the memories within."
