@@ -25,6 +25,7 @@ mission "quxNueHorizonsIntelRepublic0"
         # todo: replace lab with new outfit, if it is needed
 #		require "Research Laboratory"
     on accept
+		conversation "quxNueHorizonsIntelConversation0"
 	# stopover deprecated
 #	stopover
 #		government "Free Worlds" "Republic" "Syndicate" "Neutral" "Independent"
@@ -45,6 +46,10 @@ mission "quxNueHorizonsIntelRepublic0"
         # todo: replace placeholder
 		dialog "When you land, a Ventra operative quickly retrieves the data crystals with the information about the person of interest and hands you the logistics allotment of <payment>."
 #       dialog "${quxNueHorizonsIntelCompleteHuman}"
+
+conversation "quxNueHorizonsIntelConversation0"
+	label "start"
+	scene scene/
 
 phrase "quxNueHorizonsIntelAccept"
 	word
