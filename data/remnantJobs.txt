@@ -12,7 +12,7 @@ mission "quxNueHorizonsIntelRepublic0"
 	repeat
 	name "Intel gathering: Republic"
 #	description "Travel to <stopovers> in Ancestral space to gather data on a person of interest to the Remnant, using your reputation to meet them in person. As they are a potential threat, your memories of your mission and of the Remnant will be supressed, and you will have to return to <destination> to have them restored. This mission cannot be aborted."
-	description "Travel to a specific planet in Ancestral space to accept a Solar Winds Logistics job, in order to gather data on a person of interest to the Remnant. As a complex mission, aborting it may lead to unforseen consequences."
+	description "Travel to a specific planet in Ancestral space to accept a Solar Winds Logistics job, in order to gather data on a person of interest to the Remnant. A complex mission, aborting it may have unforseen consequences."
 	# invisible prevents dialogue, moved to chained mission
 #   invisible
 	source
@@ -48,6 +48,7 @@ mission "quxNueHorizonsIntelRepublic0"
 		has "quxNueHorizonsIntelRepublicCompReq0"
 	on complete
 		clear "quxNueHorizonsIntelRepublic0: offered"
+		clear "quxNueHorizonsIntelRepublicCompReq0"
 		payment 700000
 		"reputation: Remnant" ++
         # todo: replace placeholder
@@ -176,3 +177,31 @@ fleet "quxRemnantSeeker0"
 		"Gull (Bunks)"
 	variant 2
 		"Peregrine"
+
+# cover story jobs
+mission "quxNueHorizonsIntelRepublicCover0"
+	repeat
+	"job board"
+	"offer precedence" 100
+	destination
+		government "Republic"
+	to offer
+		not "quxNueHorizonsIntelRepublicCover0: offered"
+		has "quxNueHorizonsIntelRepublicSignal0"
+	on offer
+		conversation "quxNueHorizonsIntelRepublicConversation0"
+	on abort
+		clear "quxNueHorizonsIntelRepublicCover0: offered"
+		clear "quxNueHorizonsIntelRepublicSignal0"
+	on decline
+		clear "quxNueHorizonsIntelRepublicCover0: offered"
+		clear "quxNueHorizonsIntelRepublicSignal0"
+	on fail
+		clear "quxNueHorizonsIntelRepublicCover0: offered"
+		clear "quxNueHorizonsIntelRepublicSignal0"
+	on complete
+		clear "quxNueHorizonsIntelRepublicCover0: offered"
+		clear "quxNueHorizonsIntelRepublicSignal0"
+		set "quxNueHorizonsIntelRepublicCompReq0"
+
+conversation "quxNueHorizonsIntelRepublicConversation0"
