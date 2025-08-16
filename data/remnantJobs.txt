@@ -27,6 +27,7 @@ mission "quxNueHorizonsIntelRepublic0"
 #		require "Research Laboratory"
     on accept
 		"quxNueHorizonsRendezvousAncestRoll" = "roll: 1"
+		set "quxNueHorizonsIntelSignal0"
 		conversation "quxNueHorizonsIntelConversation0"
 		dialog "${quxNueHorizonsIntelAccept}"
 	# stopover deprecated
@@ -35,10 +36,13 @@ mission "quxNueHorizonsIntelRepublic0"
 #		attributes "spaceport"
 	on abort
 		clear "quxNueHorizonsIntelRepublic0: offered"
+		clear "quxNueHorizonsIntelSignal0"
 	on decline
 		clear "quxNueHorizonsIntelRepublic0: offered"
+		clear "quxNueHorizonsIntelSignal0"
 	on fail
 		clear "quxNueHorizonsIntelRepublic0: offered"
+		clear "quxNueHorizonsIntelSignal0"
 	# completion has to tie in with the chained mission
 	to complete
 		has "quxNueHorizonsIntelRepublicCompReq0"
@@ -129,10 +133,12 @@ mission "quxNueHorizonsIntelDaemon0earth"
 	"offer precedence" 100
 	to offer
 		not "quxNueHorizonsIntelDaemon0earth: offered"
+		has "quxNueHorizonsIntelSignal0"
 		"quxNueHorizonsRendezvousAncestRoll" == 0
 	destination "Earth"
 	on complete
 		clear "quxNueHorizonsIntelDaemon0earth: offered"
+		clear "quxNueHorizonsIntelSignal0"
 		set "quxNueHorizonsIntelRepublicSignal0"
 	npc
 		government "Remnant"
