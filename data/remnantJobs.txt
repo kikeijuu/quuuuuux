@@ -13,7 +13,7 @@ mission "quxNueHorizonsIntelRepublic0"
 	name "Intel gathering: Republic"
 #	description "Travel to <stopovers> in Ancestral space to gather data on a person of interest to the Remnant, using your reputation to meet them in person. As they are a potential threat, your memories of your mission and of the Remnant will be supressed, and you will have to return to <destination> to have them restored. This mission cannot be aborted."
 	description "Travel to a specific planet in Ancestral space to accept a Solar Winds Logistics job, in order to gather data on a person of interest to the Remnant. A complex mission, aborting it may have unforseen consequences."
-	# invisible prevents dialogue, moved to chained mission
+	# invisible prevents dialogue, moved to chained missionunneeded
 #   invisible
 	source
 		government "Remnant"
@@ -180,16 +180,22 @@ fleet "quxRemnantSeeker0"
 
 # cover story jobs
 mission "quxNueHorizonsIntelRepublicCover0"
+	name "Company representation on <destination>"
+	description "${quxRemnantShellCompany} - an affiliate of Solar Winds Logistics Ltd. - is looking for a reputable consultant to represent their interests on <destination>, where they have arranged a meeting with ${quxRepublicSpaceTitle} <npc>."
+	color selected "quxRemnantCoverJob: selected"
+	color unselected "quxRemnantCoverJob: unselected"
 	repeat
-	"job board"
-	"offer precedence" 100
+	job
+	# precedence should not be needed
+#	"offer precedence" 100
 	destination
 		government "Republic"
+		not attributes "uninhabited"
 	to offer
 		not "quxNueHorizonsIntelRepublicCover0: offered"
 		has "quxNueHorizonsIntelRepublicSignal0"
-	on offer
-		conversation "quxNueHorizonsIntelRepublicConversation0"
+	on accept
+		dialog "This looks like the cover story you need to approach <npc> on <destination>. You accept the job, and send an encrypted signal to the Seeker in orbit. Once on your ship, you receive their blessings in an encoded burst to your license as they leave the system."
 	on abort
 		clear "quxNueHorizonsIntelRepublicCover0: offered"
 		clear "quxNueHorizonsIntelRepublicSignal0"
@@ -204,4 +210,6 @@ mission "quxNueHorizonsIntelRepublicCover0"
 		clear "quxNueHorizonsIntelRepublicSignal0"
 		set "quxNueHorizonsIntelRepublicCompReq0"
 
-conversation "quxNueHorizonsIntelRepublicConversation0"
+# cover story colors (Remnant)
+color "quxRemnantCoverJob: selected" .89 .38 .62 0.
+color "quxRemnantCoverJob: unselected" .64 .64 .64 0.
