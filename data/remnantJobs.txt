@@ -135,3 +135,38 @@ mission "quxNueHorizonsIntelDaemon0earth"
 		clear "quxNueHorizonsIntelDaemon0earth: offered"
 		set "quxNueHorizonsIntelRepublicSignal0"
 	npc
+		government "Remnant"
+		personality forbearing vindictive merciful secretive staying waiting uninterested quiet
+		system destination
+		fleet "quxRemnantSeeker0"
+
+fleet "quxRemnantSeeker0"
+	government "Remnant"
+	names "remnant"
+	cargo 2
+	commodities "Food" "Clothing" "Medical"
+	outfitters "Korath Exiles Remnant Donations" "Ka'het"
+	personality
+		disables appeasing secretive
+	variant 8
+		"Starling"
+	variant 6
+		"Starling (Heavy)"
+	variant 5
+		"Starling (Sniper)"
+	variant 4
+		"Starling (Hunter)"
+	variant 3
+		"Starling (Thrasher)"
+	variant 2
+		"Gull"
+	variant 2
+		"Gull (Sniper)"
+	variant 2
+		"Gull (Support)"
+	variant 1
+		"Gull (Cargo)"
+	variant 1
+		"Gull (Bunks)"
+	variant 2
+		"Peregrine"
