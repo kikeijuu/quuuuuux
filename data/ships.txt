@@ -1,0 +1,71 @@
+# modification of base game nighthawk for PMCs
+ship "quxNighthawk0"
+    "display name" "Nighthawk Custom"
+	sprite "ship/pirate nighthawk"
+	thumbnail "thumbnail/pirate nighthawk"
+	attributes
+        # changed from transport
+		category "Transport"
+        # increased cost
+		"cost" 2666000
+        # increased shields
+		"shields" 4200
+        # marginal hull increase
+		"hull" 1111
+        # marginal crew increase
+		"required crew" 7
+        # reduced bunks
+		"bunks" 30
+        # increased mass
+		"mass" 420
+        # increased drag
+		"drag" 6.9
+		"heat dissipation" .52
+		"fuel capacity" 700
+        # increased cargo
+		"cargo space" 20
+		"outfit space" 340
+		"weapon capacity" 72
+		"engine capacity" 123
+		"outfit scan opacity" 200
+		weapon
+            # increased blast radius
+			"blast radius" 69
+			"shield damage" 510
+			"hull damage" 255
+			"hit force" 765
+	outfits
+        # changed turrets
+		"Modified Blaster Turret" 2
+		"Heavy Anti-Missile Turret"
+		
+		"RT-I Radiothermal"
+#		"KP-6 Photovoltaic Array" 3
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Large Radar Jammer"
+		"Laser Rifle" 24
+        # switched nerve gas for frags
+		"Fragmentation Grenades" 12
+		"Brig" 1
+		
+		"Impala Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
+		
+	engine -42.5 63 .8
+	engine 42.5 63 .8
+	engine -24 68 .6
+	engine 24 68 .6
+	turret 0 -6 "Heavy Anti-Missile Turret"
+	turret -26 15 "Modified Blaster Turret"
+	turret 26 15 "Modified Blaster Turret"
+	leak "leak" 40 50
+	leak "flame" 70 80
+	explode "tiny explosion" 20
+	explode "small explosion" 30
+	explode "medium explosion" 15
+	explode "large explosion" 2
+	"final explode" "final explosion small"
+    # new description
+	description "The Nighthawk is the result of pirate modifications increasing a Blackbird's capacity for transportation of lawless individuals and slaves, sacrificing much of the ship's original cargo space. The Nighthawk Custom is a further modification to Nighthawks captured by Private Military Companies, for use in their fleets as personnel transport, scouts, and mobile command posts. Although not a true warship, it is better suited to combat than a Nighthawk or Blackbird despite its light armament."

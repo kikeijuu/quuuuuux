@@ -218,6 +218,7 @@ mission "quxNueHorizonsIntelRepublicCover0"
 		government "quxPMC0"
 		personality hunting unconstrained opportunistic surveillance staying quiet
 		system "Terminus"
+		ship "quxNighthawk0" "qux"
 		
 
 # cover story colors (Remnant)
