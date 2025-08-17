@@ -210,10 +210,15 @@ mission "quxNueHorizonsIntelRepublicCover0"
 		clear "quxNueHorizonsIntelRepublicSignal0"
 		set "quxNueHorizonsIntelRepublicCompReq0"
 	npc
-		government "quxPMC0"
+		government "quxPMC0" 2
 		personality hunting unconstrained opportunistic surveillance staying quiet
 		system "Terminus"
 		fleet "Hired Guns"
+	npc
+		government "quxPMC0"
+		personality hunting unconstrained opportunistic surveillance staying quiet
+		system "Terminus"
+		
 
 # cover story colors (Remnant)
 color "quxRemnantCoverJob: selected" .89 .38 .62 0.
