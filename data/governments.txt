@@ -1,2 +1,31 @@
 government "quxPMC"
-    "display name" "Security Contractor"
+	"display name" "Security Contractor"
+	swizzle "quxPmcSwizzle0"
+	"player reputation" -10
+	bribe .1
+	"friendly hail" "friendly civilian"
+	"friendly disabled hail" "friendly disabled"
+	"hostile hail" "hostile civilian"
+	"hostile disabled hail" "hostile disabled"
+
+government "quxPmcNpcDummy0"
+	"display name" "PMC under contract to"
+	swizzle "quxPmcSwizzle1"
+	"player reputation" -10
+	bribe .2
+	"friendly hail" "friendly civilian"
+	"friendly disabled hail" "friendly disabled"
+	"hostile hail" "hostile civilian"
+	"hostile disabled hail" "hostile disabled"
+
+swizzle "quxPmcSwizzle0"
+	red   0 0.5 0.5 0
+	green 0 0.5 0.5 0
+	blue  0.5 0 0.5 0
+	alpha 0 0 0 1
+
+swizzle "quxPmcSwizzle1"
+	red   0 0.4 0.4 0
+	green 0 0.5 0.5 0
+	blue  0.5 0 0.5 0
+	alpha 0 0 0 1
