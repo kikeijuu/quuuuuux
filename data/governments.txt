@@ -9,7 +9,7 @@ government "quxPMC0"
 	"hostile disabled hail" "hostile disabled"
 
 government "quxPmcNpcDummy0"
-	"display name" "PMC under contract to"
+	"display name" "Security under contract to"
 	swizzle "quxPmcSwizzle1"
 	"player reputation" -10
 	bribe .2
