@@ -209,6 +209,11 @@ mission "quxNueHorizonsIntelRepublicCover0"
 		clear "quxNueHorizonsIntelRepublicCover0: offered"
 		clear "quxNueHorizonsIntelRepublicSignal0"
 		set "quxNueHorizonsIntelRepublicCompReq0"
+	npc
+		government "Remnant"
+		personality forbearing vindictive merciful secretive staying waiting uninterested quiet
+		system destination
+		fleet "quxRemnantSeeker0"
 
 # cover story colors (Remnant)
 color "quxRemnantCoverJob: selected" .89 .38 .62 0.

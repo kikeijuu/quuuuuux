@@ -1,4 +1,4 @@
-government "quxPMC"
+government "quxPMC0"
 	"display name" "Security Contractor"
 	swizzle "quxPmcSwizzle0"
 	"player reputation" -10
