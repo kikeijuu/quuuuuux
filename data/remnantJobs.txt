@@ -215,7 +215,7 @@ mission "quxNueHorizonsIntelRepublicCover0"
 		system "Terminus"
 		fleet "Hired Guns"
 	npc
-		government "quxPMC0"
+		government "quxPmcNpcDummy0"
 		personality hunting unconstrained opportunistic surveillance staying quiet
 		system "Terminus"
 		ship "quxNighthawk0" "${human names} ${family names}"
