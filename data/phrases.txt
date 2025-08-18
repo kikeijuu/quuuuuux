@@ -1,0 +1,42 @@
+# file does not include most phrases, just generally applicable ones
+# todo: move phrases here or into dedicated files
+
+# human phrases
+
+# remnant phrases
+phrase "quxRemnantShellCompany"
+	word
+		"Aventine Electronics"
+		"Masamune Air Conditioning Ltd."
+		"Amala Kamala Shoukai"
+		"Twelve Olympians Inc."
+		
+		"Lunar Tides Ltd."
+		"MAGK Asteroid Armaments"
+		"(incomprehensible gestures)"
+		"Syndication Systemics"
+		"Laplace Laboratory"
+		"Notasgard Security"
+		"Shattered Light Inc."
+		"Taiko Shipyards"
+		"Key-Stone Atomics"
+		"Remnium Fusion Futures"
+		"Arvgi-Azure Atomics"
+		"Tangled Shrouds and Cooling Solutions"
+		"Twilight Aesthetics"
+		"Tycho's Successors"
+		"Rhe Charles Plot Foundation"
+		
+		"The Embermon Company"
+		"Hello 'Indus Inc."
+		"Endless Void Inc."
+		"Deep Rock Excavation"
+		"Dry Gravel Construction"
+		"New Wakanda Aerospace"
+		"Shell Hyperfuels"
+		"Fold'em Laundromat"
+		"WHJD & Yudon Co."
+		"Radon Inc."
+		"Wacist Waste Disposal Ltd."
+		"Kirov Reporting NHK"
+		"Honest Cakes Catering"
