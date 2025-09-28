@@ -195,7 +195,7 @@ mission "quxNueHorizonsIntelRepublicCover0"
 		not "quxNueHorizonsIntelRepublicCover0: offered"
 		has "quxNueHorizonsIntelRepublicSignal0"
 	on accept
-		dialog "This looks like the cover story you need to approach <npc> on <destination>. You accept the job, and send an encrypted signal to the Seeker in orbit. Once on your ship, you receive their blessings in an encoded burst to your license as they leave the system."
+		dialog "This looks like the cover story you need to approach <npc> on <destination>. You accept the job, and send a signal to the Seeker in orbit. Once on your ship, you receive their blessings in an encoded burst to your license as they leave the system."
 	on abort
 		clear "quxNueHorizonsIntelRepublicCover0: offered"
 		clear "quxNueHorizonsIntelRepublicSignal0"
@@ -209,6 +209,7 @@ mission "quxNueHorizonsIntelRepublicCover0"
 		clear "quxNueHorizonsIntelRepublicCover0: offered"
 		clear "quxNueHorizonsIntelRepublicSignal0"
 		set "quxNueHorizonsIntelRepublicCompReq0"
+		conversation "quxNueHorizonsIntelConvoRep0"
 	npc
 		government "quxPMC0" 2
 		personality hunting unconstrained opportunistic surveillance staying quiet
@@ -219,8 +220,12 @@ mission "quxNueHorizonsIntelRepublicCover0"
 		personality hunting unconstrained opportunistic surveillance staying quiet
 		system "Terminus"
 		ship "quxNighthawk0" "${human names} ${family names}"
-		
 
 # cover story colors (Remnant)
 color "quxRemnantCoverJob: selected" .89 .38 .62 0.
 color "quxRemnantCoverJob: unselected" .64 .64 .64 0.
+
+conversation "quxNueHorizonsIntelConvoRep0"
+	label "start"
+	scene "scene/thomasmarchand0.jpg"
+	`The above image is a placeholder.`
