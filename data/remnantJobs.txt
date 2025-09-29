@@ -227,5 +227,5 @@ color "quxRemnantCoverJob: unselected" .64 .64 .64 0.
 
 conversation "quxNueHorizonsIntelConvoRep0"
 	label "start"
-	scene "scene/thomasmarchand0.jpg"
-	`The above image is a placeholder.`
+	scene "scene/signet976_0.jpg"
+	`${quxNueHorizonsIntelRepScene}`
