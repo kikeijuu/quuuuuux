@@ -225,7 +225,12 @@ mission "quxNueHorizonsIntelRepublicCover0"
 color "quxRemnantCoverJob: selected" .89 .38 .62 0.
 color "quxRemnantCoverJob: unselected" .64 .64 .64 0.
 
+# republic intel meeting results
 conversation "quxNueHorizonsIntelConvoRep0"
 	label "start"
 	scene "scene/signet976_0.jpg"
 	`${quxNueHorizonsIntelRepScene}`
+
+phrase "quxNueHorizonsIntelRepScene"
+	word
+		""
