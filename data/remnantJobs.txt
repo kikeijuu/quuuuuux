@@ -233,4 +233,4 @@ conversation "quxNueHorizonsIntelConvoRep0"
 
 phrase "quxNueHorizonsIntelRepScene"
 	word
-		""
+		"Leaving your ship in its birth, you make your way to the meeting point. A few hundred meters from the spaceport, the Republic liason office doesn't show many signs of use: any organisation of note in the system would have its own compound."
